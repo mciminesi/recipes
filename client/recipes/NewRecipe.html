@@ -1,0 +1,15 @@
+<template name="NewRecipe">
+  <div class="new-recipe-container">
+    <form class="new-recipe-form">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="NaMe" /><br />
+        <label>Description:</label>
+        <input type="text" name="desc" placeholder="Description" /><br />
+        <input type="text" name="author" placeholder="Author" /><br />
+        <input type="date" name="createdAt" placeholder="Date" /><br />
+        <input type="submit" value="Add Recipe">
+      <!-- {{> quickForm collection=getRecipes id="insertRecipeForm" type="insert" class="new-recipe-form"}} -->
+      <!-- {{> quickForm schema=Schemas.RecipeSchema id="insertRecipeForm" type="insert" class="new-recipe-form"}} -->
+    </form>
+  </div>
+</template>
